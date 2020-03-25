@@ -10,6 +10,7 @@ ENV TEMPORARY_DEPENDENCIES='shadow'
 RUN apk --no-cache add bash ${TEMPORARY_DEPENDENCIES}
 
 # add user as per: https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#user
+# create groupId:docker and userId:docker
 RUN groupadd -r docker && useradd --no-log-init -r -g docker docker
 RUN chown -R docker $HOME
 

@@ -9,10 +9,9 @@ module.exports = {
 
     browser
       .url(nightwatchConfig.test_settings.default.launch_url)
-      .waitForElementVisible('#test', 10000)
-      .assert.containsText('#test', 'Hello, Docker World!')
+      .waitForElementVisible('.hnname', 10000)
+      .assert.containsText('.hnname', 'Hacker News')
       .saveScreenshot('/home/docker/app/tests_output/screenshots/test.png')
-      // .assert.containsText('#test', 'this assertion will fail')
       .end();
 
     console.log('Nightwatch test finished');

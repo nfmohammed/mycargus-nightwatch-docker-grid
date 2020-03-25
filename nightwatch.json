@@ -2,7 +2,7 @@
   "src_folders" : ["tests"],
   "test_settings" : {
     "default" : {
-      "launch_url": "http://web",
+      "launch_url": "https://news.ycombinator.com/",
       "selenium_host"  : "hub",
       "desiredCapabilities": {
         "browserName": "chrome"

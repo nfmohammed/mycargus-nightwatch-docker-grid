@@ -1,3 +1,16 @@
+- Original Repo: https://github.com/mycargus/nightwatch-docker-grid
+
+- I have done slight modifications, so tests can run against `Hacker News` website.
+
+Commands
+    
+    //start selenium-hub with chrome and firefox nodes
+    $ npm start
+    
+    //builds NW docker image, runs container which internally runs nightwatch tests against the hub.
+    //npm test
+---- 
+
 [![Build Status](https://travis-ci.org/mycargus/nightwatch-docker-grid.svg?branch=master)](https://travis-ci.org/mycargus/nightwatch-docker-grid)
 
 # A Dockerized Selenium Grid with Nightwatch

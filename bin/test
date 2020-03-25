@@ -20,5 +20,9 @@ function cleanup() {
 
 trap cleanup INT TERM EXIT
 
+docker-compose kill $container
+
+docker-compose build --pull nightwatch
+
 docker-compose run --name $container nightwatch
 
